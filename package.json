@@ -1,16 +1,12 @@
 {
   "name": "gynt",
   "version": "0.0.1",
-  "description": "Gynt Online",
-  "main": "app.js",
-  "scripts": {
-    "start": "webpack-dev-server --progress",
-	"heroku-postbuild": "webpack -p"
-  },
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.4.3"
+    "express": "~4.16.0"
   },
   "author": "Gabriel Franzoni"
 }

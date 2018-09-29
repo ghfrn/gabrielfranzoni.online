@@ -1,0 +1,15 @@
+{
+  "name": "gynt",
+  "version": "0.0.1",
+  "description": "Gynt Online",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.4.3"
+  },
+  "author": "Gabriel Franzoni"
+}

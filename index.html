@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Gabriel Franzoni</title>
+
+		<meta charset="utf-8">
+		<meta name="keywords" content=""/>
+
+		<link rel="icon" type="image/ico" href="favicon.ico" sizes="128x128">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_purple.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+		<link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
+	</head>
+<body>
+
+<span class="loading"><div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div></span>
+
+<div class="landing naked" id="top">
+
+  <div class="greeting">
+
+    <h1>Gynt Designs</h1>
+
+    <p>Everything you can imagine.</p>
+
+    <h2>Services</h2>
+
+    <ul class="services">
+      <li>Modern website design with HTML5/CSS3.</li>
+      <li>Backend server coding on modern technology stacks with continous integration.</li>
+      <li>General brand design.</li>
+    </ul>
+
+    <hr />
+
+    <div class="center">
+      <a class="button mdl-button mdl-js-button  mdl-js-ripple-effect" href="#contact">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="showcase">
+
+    <div class="demos">
+    
+      <table class="columns">
+
+        <h2>Design Demos</h2>
+		
+        <tr>        
+          <td>
+            <div class="preview mdl-card mdl-card--border mdl-shadow-8dp">
+				<a href="fancy.html"><img class="u-max-full-width mdl-card__media" src="./assets/img/fancy_ss.png"></a>
+				
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fancy.html">Open Preview</a>
+				</div>
+            </div>
+          </td>
+
+          <td>          
+            <div class="preview mdl-card mdl-card--border mdl-shadow-8dp">
+              <a href="epic.html"><img class="u-max-full-width" src="./assets/img/epic_ss.png"></a>
+			  				
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fancy.html">Open Preview</a>
+				</div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>        
+          <td>
+            <div class="preview mdl-card mdl-card--border mdl-shadow-8dp">
+              <a href="fancy.html"><img class="u-max-full-width" src="./assets/img/fancy_ss2.png"></a>
+			  				
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fancy.html">Open Preview</a>
+				</div>
+            </div>
+          </td>
+
+          <td>          
+            <div class="preview mdl-card mdl-card--border mdl-shadow-8dp">
+              <a href="epic.html"><img class="u-max-full-width" src="./assets/img/epic_ss2.png"></a>
+			  				
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fancy.html">Open Preview</a>
+				</div>
+            </div>
+          </td>
+        </tr>
+		
+		<tr>        
+          <td>
+            <div class="preview mdl-card mdl-card--border mdl-shadow-8dp">
+				<a href="http://cristianetabai.com.br"><img class="u-max-full-width" src="./assets/img/cris_ss.png"></a>
+							
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fancy.html">Open Preview</a>
+				</div>
+            </div>
+          </td>
+
+          <td>          
+            <div class="preview mdl-card mdl-card--border mdl-shadow-8dp">
+				<a href="http://cristianetabai.com.br"><img class="u-max-full-width" src="./assets/img/cris_ss2.png"></a>
+			  			
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="fancy.html">Open Preview</a>
+				</div>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+      <hr />
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="content naked">
+
+  <div class="right_column">
+
+    <div class="contact" id="contact">
+
+      <h2>Contact</h2>
+
+      <a href="mailto:ghfranzoni@gmail.com">ghfranzoni@gmail.com</a>
+
+    </div>
+
+    <div class="footer">
+      
+      <p><small>Copyright Gabriel Franzoni, 2018</small></p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="./assets/js/jquery.js"></script>
+<script>
+$(document).ready(function() {
+  $(".loading").fadeOut();
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 300);
+          return false;
+        }
+      }
+    });
+  });
+  
+});
+</script>
+
+</body>
+</html>

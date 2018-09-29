@@ -4,7 +4,8 @@
   "description": "Gynt Online",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --progress"
+    "start": "webpack-dev-server --progress",
+	"heroku-postbuild": "webpack -p"
   },
   "license": "MIT",
   "dependencies": {

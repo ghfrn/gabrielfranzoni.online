@@ -296,12 +296,12 @@ body {
 .content .left_column {
 	max-width: 40vw;
 	align-self: flex-start;
-	margin: 10vw 0 0 10vw;
+	margin: 7em 0 0 7em;
 }
 
 .landing .showcase,
 .content .right_column {
-	margin: 10vw 10vw 0 auto;
+	margin: 7em 7em 0 auto;
 }
 
 .content .right_column {
@@ -402,6 +402,11 @@ body {
 
 /* Columns */
 
+.columns tr {
+	display: flex;
+	flex-direction: row;
+}
+
 .columns th, .columns td {
     border: 0;
     padding: 5px;
@@ -430,6 +435,18 @@ body {
 
 .columns .preview .mdl-card__actions {
 	padding: 12px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 40vw;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../img/Grollix Logo SOUNDCLOUD.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
 }
 
 .footer {
@@ -562,6 +579,39 @@ body {
 	.landing .greeting {
     	position: static;
 	}
+	
+	.landing .greeting,
+	.landing .showcase,
+	.content .right_column,
+	.content .left_column {
+		max-width: unset;
+		margin: 0 7em 0 7em;
+	}
+	
+	.naked p {
+		letter-spacing: 0;
+	}
+	
+	.footer {
+		padding: 7em;
+	}
+	
+	p, .text {
+		text-align: justify;
+		font-size: 12pt;
+	}
+	
+	h1 {
+		font-size: 3.0rem;
+	}
+	
+	.main.in {
+		padding: 0;
+	}
+	
+	.footer p {
+		font-size: 10pt;
+	}
 }
 
 @media (max-width: 360px) {
@@ -579,7 +629,14 @@ body {
 	}
 
 	.welcome span.center {
-		font-size: 5em;
+		font-size: 7em;
+	}
+	
+	.columns tr {
+		display: flex;
+		flex-direction: column;
+		border-top: 1px white solid;
+		padding: 0.5rem 0 0.5rem 0;
 	}
 }
 

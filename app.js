@@ -6,15 +6,15 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'html/index.html'));
 });
 
 app.get('/demos/fancy', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'fancy.html'));
+  res.sendFile(path.resolve(__dirname, 'html/fancy.html'));
 });
 
 app.get('/demos/epic', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'epic.html'));
+  res.sendFile(path.resolve(__dirname, 'html/epic.html'));
 });
 
 app.use(express.static(path.join(__dirname, 'public')));

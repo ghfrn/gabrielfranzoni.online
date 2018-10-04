@@ -69,6 +69,7 @@ body {
 	font-family: "Alegreya", serif;
 	background: #fff;
 	color: #999;
+    background-color: #101010;
 }
 
 h1 {
@@ -585,7 +586,7 @@ body {
 	.content .right_column,
 	.content .left_column {
 		max-width: unset;
-		margin: 0 7em 0 7em;
+		margin: 0 2em 0 2em;
 	}
 	
 	.naked p {
@@ -593,7 +594,7 @@ body {
 	}
 	
 	.footer {
-		padding: 7em;
+		padding: 1em 5em;
 	}
 	
 	p, .text {
